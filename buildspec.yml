@@ -4,7 +4,7 @@ phases:
   install:
     commands:
       - npm install time
-      - aws cloudformation package --template-file samTemplate.yml --kms-key-id kms-key-id --s3-bucket thedwarehouse-testing 
+      - aws cloudformation package --template-file samTemplate.yml --kms-key-id -56c080fb-1a3b-477e-a0c7-dd533c4cc343 -s3-bucket thedwarehouse-testing 
                                    --output-template-file outputSamTemplate.yml
 artifacts:
   type: zip
